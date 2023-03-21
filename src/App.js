@@ -91,8 +91,8 @@ function App() {
   const handleJson = (e) => setText(e.target.value);
   return (
     <div style={{display: 'flex', border: 'solid 1px', height: '50rem', margin: '2rem'}}>
-      <textarea onChange={handleJson} style={{border: 'solid 1px', margin: '20px', height: '90%', width: '50%'}}/>
-      <div style={{border: 'solid 1px', margin: '20px', height: '90%', width: '50%'}}>
+      <textarea onChange={handleJson} style={{border: 'solid 1px', margin: '20px', height: '90%', width: '50%', overflow: 'scroll'}}/>
+      <div style={{border: 'solid 1px', margin: '20px', height: '90%', width: '50%', overflow: 'scroll'}}>
         {json ? (
           <Pages json={json} />
         ) : (
